@@ -1,8 +1,6 @@
 package file;
 
-import classes.Consulta;
-import classes.Paciente;
-import classes.Medico;
+import classes.*;
 import java.util.ArrayList;
 import java.util.List;
 

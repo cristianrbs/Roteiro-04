@@ -1,8 +1,7 @@
 package gerentes;
 
 import classes.Medico;
-import file.FilePersistence;
-import file.SerializacaoCSVMedico;
+import file.*;
 import java.util.ArrayList;
 import java.util.List;
 

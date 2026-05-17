@@ -1,8 +1,7 @@
 package gerentes;
 
 import classes.Consulta;
-import file.FilePersistence;
-import file.SerializacaoCSVConsulta;
+import file.*;
 import java.util.ArrayList;
 import java.util.List;
 
