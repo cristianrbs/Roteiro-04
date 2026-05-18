@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.Objects;
+
 public class Medico {
     private String nome;
     private String crm;
@@ -25,6 +27,31 @@ public class Medico {
         return nome + " - " + especialidade + " (CRM: " + crm + ")";
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 29 * hash + Objects.hashCode(this.nome);
+        return hash;
+    }
+
+    
+    //equals e hashcode
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Medico other = (Medico) obj;
+        return Objects.equals(this.nome, other.nome);
+    }
+
+    
   
     //getters e setters
     public String getNome() {
